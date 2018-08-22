@@ -1,0 +1,6 @@
+<form [formGroup]="movieFormGroup">
+    <mat-form-field>
+        <input matInput placeholder="Movie name" formControlName="title">
+    </mat-form-field>
+    <button class="btn" (click)="addMovie()" [disabled]="!movieFormGroup.valid">Add</button>
+</form>

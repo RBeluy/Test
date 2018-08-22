@@ -1,0 +1,48 @@
+.header {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title{
+    font-size: 36px;
+  }
+}
+.movie-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  &:not(:first-child){
+    margin-top: 10px;
+  }
+  &:nth-child(1n){
+    background-color: #e1ddec;
+  }
+  &:nth-child(2n){
+    background-color: #dbeedd;
+  }
+  &:nth-child(3n){
+    background-color: #f7d8d8;
+  }
+}
+.movie-item {
+  .movie-name, .movie-rating {
+    font-size: 24px;
+  }
+}
+.movie-name-wrap {
+  display: flex;
+  align-items: center;
+}
+.remove {
+  margin-right: 10px;
+  transition: all 200ms;
+  &:hover {
+    color: white;
+  }
+}
+.checked {
+  color: orange;
+}

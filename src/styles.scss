@@ -1,0 +1,98 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+$color-negative-rating: #0f0 !default;
+$color-ok-rating: #f00 !default;
+$color-positive-rating: #00f !default;
+$color-default-rating: #ff0 !default;
+
+
+/* Import star-rating styles */
+@import "./assets/scss/star-rating";
+//RESET
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  &:focus {
+    outline: none;
+  }
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Roboto;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+}
+
+//GLOBAL CUSTOM STYLES
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.btn {
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: #007bff;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms;
+  cursor: pointer;
+  &:hover {
+    background-color: #0253aa;
+  }
+  &:disabled {
+    background-color: #7d7d7d;
+  }
+}

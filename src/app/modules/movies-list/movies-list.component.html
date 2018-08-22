@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="header">
+        <h1 class="title">Movies list</h1>
+        <button class="btn" (click)="addMovie()">Add Movie</button>
+    </div>
+    <div class="movies-container">
+        <div class="movie-item" *ngFor="let movie of movies$ | async; let movieIndex = index">
+            <div class="movie-name-wrap">
+                <span class="remove" (click)="removeMovie(movie.id)">&#10006;</span>
+                <span class="movie-name">{{movie.title}}</span>
+            </div>
+            <star-rating [starType]="'svg'" [rating]="movie?.rating"
+                         (starClickChange)="onClick($event)"
+                         (ratingChange)="onRatingChange($event, movieIndex)"></star-rating>
+        </div>
+    </div>
+</div>
